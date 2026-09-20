@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
-import {Cart} from "./Cart";
 import {CardBusiness} from "./CardBusiness";
-import type {Item,QuickItem, CardBsn} from "../types/item.types"
+import type {Item, CardBsn} from "../types/item.types"
 
 
 export default function Board() {
     const [items, setItems] = useState<Item[]>([]);
 
-    const itemsQuickLookup:QuickItem[] = items.map(item=>({
-        id:item.id,
-        image: item.thumbnail,
-        title: item.title,
-        price: item.price
-    }));
+    // const itemsQuickLookup:QuickItem[] = items.map(item=>({
+    //     id:item.id,
+    //     image: item.thumbnail,
+    //     title: item.title,
+    //     price: item.price
+    // }));
 
     const cardBusinessDetails:CardBsn[] = items.map(item=>({
       id: item.id,
