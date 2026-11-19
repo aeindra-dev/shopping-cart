@@ -1,11 +1,9 @@
-import Header from "@/components/features/Header/Header";
-import HeroSection from "@/components/features/Hero/HeroSection";
+import React from 'react'
 
-export default function HomePage(){
-    return <>
-    <div className="min-h-dvh">
-        <Header />
-        <HeroSection />
-    </div>
-    </>;
+const Home = () => {
+  return (
+    <div>HomePage</div>
+  )
 }
+
+export default Home

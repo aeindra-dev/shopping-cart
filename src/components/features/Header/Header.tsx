@@ -11,10 +11,12 @@ export default function Header(){
 
     const toggleDarkMode = ()=>setVismode(prev=>!prev);
     return <>
-    <div className="sticky flex justify-around items-center ">
-        <Logo />
-        <NavMenu/>
-        <HeaderActionIcons onToggleDarkMode={toggleDarkMode}/>
+    <div className="mx-auto w-full max-w-6xl">
+        <div className="sticky flex justify-around items-center ">
+            <Logo />
+            <NavMenu/>
+            <HeaderActionIcons onToggleDarkMode={toggleDarkMode}/>
+        </div>
     </div>
     </>
 }
