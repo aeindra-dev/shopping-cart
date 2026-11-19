@@ -19,6 +19,7 @@ function App() {
         <Route path="/accessories" element={<Accessories/>}/>
         <Route path="/collection" element={<Collection/>}/>
         <Route path="/brands" element={<Brands/>}/>
+        <Route path="*" element={<Brands/>}/>
       </Route>
     </Routes>
   </>
